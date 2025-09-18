@@ -8,7 +8,8 @@ We will go over steps in lecture. You should fill out the following:
 - `pipenv install` to install libraries/dependencies
 
 ## What commands starts the server?
-- `pipenv run flask --app server.py run` to run the flask app
+- `pipenv run flask --app server.py run` to run the development flask app
+- `pipenv run gunicorn server:app` to run in production
 
 ## Before render
 
