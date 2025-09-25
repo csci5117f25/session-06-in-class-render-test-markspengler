@@ -14,5 +14,18 @@
 {% if name %}
 <h2>and hello to {{name}}</h2>
 {% endif %}
+
+<form action="/addToGuestbook" method="post">
+    <ol>
+        <li>
+            <label>Name: <input type="text" name="name"></label>
+        </li>
+        <li>
+            <label>Message: <input type="text" name="message"></label>
+        </li>
+    </ol>
+    <input type="submit" value="Submit">
+</form>
+
 </body>
 </html>
